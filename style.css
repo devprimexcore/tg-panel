@@ -1,0 +1,115 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #0e0e0e;
+  color: #e6e6e6;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Layout */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #00ffcc;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1rem;
+  color: #aaaaaa;
+}
+
+/* Toolbox cards */
+.toolbox {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #1a1a1a;
+  border: 2px solid #333;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 0 10px #000;
+}
+
+.card:hover {
+  background-color: #111;
+  border-color: #00ffcc;
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #00ffcc33;
+}
+
+.card i {
+  font-size: 2.2rem;
+  color: #00ffcc;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+/* Action area */
+#action-area {
+  margin-top: 3rem;
+  background-color: #161616;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  min-height: 150px;
+}
+
+#output p {
+  color: #888;
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  border-top: 1px solid #222;
+  padding-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .card h2 {
+    font-size: 1.2rem;
+  }
+    }
