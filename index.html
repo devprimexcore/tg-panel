@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Primex Tools</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- خط -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <!-- أيقونات FontAwesome -->
+  <script src="https://kit.fontawesome.com/a2e0c6e6b1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-terminal"></i> Primex AI Toolbox</h1>
+      <p>👨‍💻 Powered by JavaScript – Static, Smart, Ruthless.</p>
+    </header>
+
+    <section class="toolbox">
+      <div class="card" onclick="runTool('encrypt')">
+        <i class="fas fa-lock"></i>
+        <h2>Encrypt</h2>
+        <p>Secure your text using AES, Base64, SHA-256, and more.</p>
+      </div>
+
+      <div class="card" onclick="runTool('decrypt')">
+        <i class="fas fa-unlock-alt"></i>
+        <h2>Decrypt</h2>
+        <p>Break down encrypted strings (if reversible).</p>
+      </div>
+
+      <div class="card" onclick="runTool('ai')">
+        <i class="fas fa-robot"></i>
+        <h2>AI Assistant</h2>
+        <p>Ask anything. Let the bot handle it.</p>
+      </div>
+
+      <div class="card" onclick="runTool('tools')">
+        <i class="fas fa-tools"></i>
+        <h2>More Tools</h2>
+        <p>Regex, hash generator, lorem ipsum & more.</p>
+      </div>
+    </section>
+
+    <section id="action-area">
+      <div id="output">
+        <p>Pick a tool to begin.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 <strong>PrimexCore</strong> – No Sleep. Just Code.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
